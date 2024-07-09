@@ -21,19 +21,52 @@ if __name__ == '__main__':
     colors = ('red', 'blue', 'green', 'yellow', 'orange')
     
     # Make a new turtle
-    
+    gg = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    gg.shape('turtle')
     # Set the turtle speed to max (0)
-    
+    gg.speed(0)
     # Set the turtle width to 1
-    
+    gg.width(1)
     # Create a variable to hold the number of sides in a pentagon
-    
+    sides =4
     # Create a variable to be the angle of 360 divided by the sides variable
-    
+    angle = 360/sides
     # Use a for loop to repeat ALL the following lines of code 360 times. 
-        
+    for i in range(2000):
+        if i == 100:
+            gg.width(2)
+        if i == 200:
+            gg.width(3)
+        if 1 == 300:
+            gg.width(4)
+        if i == 400:
+            gg.width(5)
+        if i == 500:
+            gg.width(6)
+        if i == 600:
+            gg.width(7)
+        if i == 700:
+            gg.width(8)
+        if i == 700:
+            gg.width(9)
+        if i == 800:
+            gg.width(10)
+        if i == 900:
+            gg.width(11)
+        if i == 1000:
+            gg.width(12)
+        if i == 1100:
+            gg.width(13)
+        if i == 1200:
+            gg.width(14)
+        if i == 1300:
+            gg.width(15)
+        if i == 1400:
+            gg.width(16)
+        gg.pencolor(get_next_color(i))
+        gg.forward(i)
+        gg.right(angle+1)
         # If the loop variable (i) is equal to 100, set the turtle width to 2
         
         # If the loop variable (i) is equal to 200, set the turtle width to 3

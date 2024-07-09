@@ -21,18 +21,29 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    bruh = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    bruh.shape('turtle')
     # Set the turtle width to 2
-    
+    bruh.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    bruh.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-        
+    for i in range(25):
+        bruh.fillcolor('orange')
+        bruh.begin_fill()
+        bruh.right(45)
+        bruh.forward(64)
+        bruh.left(40)
+        bruh.forward(flameSize)
+        bruh.right(170)
+        bruh.forward(flameSize)
+        bruh.right(62)
+        bruh.forward(baseSize)
+        bruh.end_fill()
+        bruh.hideturtle()
         # Set the turtle .fillcolor() to orange
-        
         # Call the turtle .begin_fill() function
         
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
