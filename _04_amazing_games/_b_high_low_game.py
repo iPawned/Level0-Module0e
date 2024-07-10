@@ -7,12 +7,20 @@ if __name__ == '__main__':
     window.withdraw()
 
     # 1. Change this line to give you a random number between 1 - 100.
-    random_num = random.randint(1, 10)
+    random = random.randint(1, 100)
 
     # 2. Print out the random variable that you made in step #1
-
     # 3. Code a for loop to run steps 4-10, 10 times
-
+    for i in range(5):
+        guess = simpledialog.askinteger(title='Guess 1',prompt='Guess try to guess a number between 1 and 100!')
+        if guess == random:
+            messagebox.showinfo(title='',message='You win!')
+            sys.exit(0)
+        if guess > random:
+            messagebox.showinfo(title='',message="Too high!")
+        if guess < random:
+            messagebox.showinfo(title='',message='Too low!')
+    messagebox.showinfo(title='',message='You lose, the number was ' + random + '!')
         # 4. Ask the user for a guess using a pop-up window, and save their response
 
         # 5. If the guess is correct
